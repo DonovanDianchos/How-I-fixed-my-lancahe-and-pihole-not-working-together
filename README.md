@@ -205,6 +205,8 @@ After all that hard work you can finally put that puppy into high gear with `~ $
 
 Now please test your setup with an PC that uses the pihole DNS as its DNS. If youre on Windows dont forget to `ipconfig /flushdns ` if youre on linux you probably already know how to do it on your own. Next command is `nslookup lancache.steamcontent.com` . You Should get as output the IP of your Pihole and then Lancache.
 
+After checking everything you should set lancache to restart always, the path is `home -> lancache -> docker-compose.yml` open it with `~ $ nano docker-compose.yml` set autostart to `always` dont forget to save your changes. Then stop everything with `~ $ sudo docker compose down` and restart it with `~ $ sudo docker compose up -d` then dont forget to disable the lancache DNS. And everything should work as expected
+
 Credits
 =
 
